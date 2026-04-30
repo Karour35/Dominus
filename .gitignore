@@ -1,3 +1,66 @@
+# =====================================================================
+# DOMINUS PUBLIC SHOWCASE — Garde-fou anti-fuite
+# =====================================================================
+# Ce repo est une vitrine. Aucun code, aucune donnee runtime, aucune
+# configuration sensible ne doit s'y retrouver. La liste ci-dessous
+# bloque les ajouts accidentels avant qu'ils ne soient committes.
+# =====================================================================
+
+# Code source applicatif (jamais dans la vitrine)
+*.py
+*.pyc
+*.pyo
+*.bat
+*.sh
+*.ps1
+
+# Runtime, donnees, journaux (jamais)
+*.jsonl
+*.log
+*.db
+*.sqlite
+*.sqlite3
+data/
+logs/
+reports/
+backups/
+archives/
+temp/
+tmp/
+
+# Configuration et secrets (jamais)
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.pfx
+config/
+*.config
+*.cfg
+
+# Memoire et personnel (jamais)
+memory/
+DominusMemory/
+DominusData/
+DominusWorkspace/
+DominusTrash/
+
+# Twins, registries, autorite (jamais)
+dominus_twin/
+systeme/
+*.twin.json
+
+# Tests internes (jamais)
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =====================================================================
+# Section Python standard (heritee, conservee)
+# =====================================================================
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

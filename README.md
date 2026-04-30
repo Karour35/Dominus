@@ -1,110 +1,83 @@
-# 
+<p align="center">
+  <img src="assets/dominus_brand_eye.png" alt="Dominus" width="500"/>
+</p>
 
+# Dominus
 
+**Dominus est une IA personnelle qui contrôle et vérifie ce qu'une IA fait avant qu'elle agisse.**
 
-\# Dominus
+> *La plupart des systèmes d'IA se concentrent sur ce que l'IA peut faire.*
+> *Dominus se concentre sur ce que l'IA devrait être autorisée à faire.*
 
+Projet personnel en développement actif. Tourne en local, sans dépendance cloud.
 
+> **Statut : développement actif. Pas de release publique stable.**
+> Ce dépôt est une vitrine du projet, pas une distribution installable.
 
-\*\*Local AI system focused on control, supervision and reliability.\*\*
+---
 
+## Honnêteté sur la fabrication
 
+Je viens du BTP, 18 ans de chantier, et je suis en reconversion vers le
+développement Python.
 
-Dominus is a personal project currently in active development.
+**Je n'écris pas le code moi-même.** Je dirige des assistants IA qui
+rédigent, et je joue trois rôles :
 
+- **Architecte** — je définis la structure
+- **Garde-fou** — je fixe les règles et les limites
+- **Relecteur** — je teste, je casse, je valide
 
+Chaque décision passe par une validation manuelle. C'est cohérent avec
+l'idée même de Dominus : une IA qui n'agit qu'avec consentement.
 
-It runs locally (no cloud dependency) and is designed to control how AI behaves, rather than just using it.
+---
 
+## Ce que Dominus fait aujourd'hui
 
+- Analyse les actions effectuées sur le système
+- Garde une trace structurée de ce qui se passe (logs + mémoire)
+- Donne un avis avant chaque modification (sûr / prudence / à éviter)
+- Fonctionne sans dépendre d'un service externe
+- Chaque instance reste personnelle, mais peut échanger des évolutions
+  validées avec d'autres instances de confiance, sans serveur central
 
-\---
+---
 
+## Ce que Dominus n'est PAS
 
+- Pas un produit
+- Pas une version finale
+- Pas un système autonome
+- Pas du code écrit en solitaire (cf. section "Honnêteté sur la fabrication")
 
-\## What it does
+---
 
+## Phase actuelle
 
+| Phase | Description | Statut |
+|---|---|---|
+| **Phase 5** | Avis avant chaque modification (sûr / prudence / à éviter), non bloquant | Active |
+| **Phase 6 — Shadow** | Observation en lecture seule, rapport quotidien | En test |
+| Phases suivantes | Documentées, non activées | En attente |
 
-\- Runs a local AI system (LLM-based)
+Aucune phase ne s'active sans validation explicite.
 
-\- Adds a supervision layer before any action is executed
+---
 
-\- Tracks actions and keeps structured logs (traceability)
+## Documentation
 
-\- Provides validation feedback before modifications (safe / caution / risky)
+- [ARCHITECTURE.md](ARCHITECTURE.md) — vision et principes
+- [ROADMAP.md](ROADMAP.md) — phases et trajectoire
+- [SECURITY.md](SECURITY.md) — invariants de supervision
 
-\- Works without external services
+---
 
-\- Can exchange validated updates between trusted instances (peer-to-peer, no central server)
+## Auteur
 
+Eddy Gaudin — projet personnel, mono-mainteneur.
 
+---
 
-\---
-
-
-
-\## Current state
-
-
-
-\- Memory context system active (advisory layer before changes)
-
-\- Observation phase running in read-only mode
-
-\- No automatic learning — all evolution is controlled and validated
-
-
-
-\---
-
-
-
-\## Philosophy
-
-
-
-Dominus is not just another AI tool.
-
-
-
-It is designed to ensure that:
-
-\- AI actions are controlled
-
-\- learning is supervised
-
-\- decisions are traceable
-
-\- the user remains in control
-
-
-
-\---
-
-
-
-\## Status
-
-
-
-This project is:
-
-\- Not a product
-
-\- Not production-ready
-
-\- Under active development
-
-
-
-\---
-
-
-
-\## Author
-
-
-
-Eddy Gaudin
-
+*Dépôt vitrine. Le code source de l'implémentation n'est pas inclus ici.
+Voir [LICENSE](LICENSE) pour les termes d'utilisation.*
